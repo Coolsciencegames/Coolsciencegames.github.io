@@ -1,895 +1,899 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>CoolmathGames</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-
-
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>repl.it</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+ 
+ 
 <table>
- <thead>
+<thead>
+  <tr>
+   <th></th>
+   <th>1</th>
+   <th>2</th>
+   <th>3</th>
+   <th>4</th>
+   <th>5</th>
+   <th>6</th>
+   <th>7</th>
+   <th>8</th>
+   <th>9</th>
+   <th>10</th>
+   <th>11</th>
+   <th>12</th>
+   <th>13</th>
+   <th>14</th>
+   <th>15</th>
+   <th>16</th>
+   <th>17</th>
+   <th>18</th>
+  </tr>
+ 
+ <tbody>
    <tr>
-    <th></th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    <th>7</th>
-    <th>8</th>
-    <th>9</th>
-    <th>10</th>
-    <th>11</th>
-    <th>12</th>
-    <th>13</th>
-    <th>14</th>
-    <th>15</th>
-    <th>16</th>
-    <th>17</th>
-    <th>18</th>
-   </tr>
-
-  <tbody>
-    <tr>
-      <th>1</th>
-        <td onclick="quest(1)" id = "Gaz">
-        <strong>1</strong>
-        <br>
-        <acronym>H</acronym>
-        <br>
-        <em>Hydrogène</em>
-        <br>
-        <i>1.0<i>
-        </td>
-
-      </td>
-      <th></th>
-      <th colspan="10" rowspan="3"><h1>Jeu de tableau periodique</h1></th>
-      <th colspan="5">Score =<div id="sc"></div></th>
-      <td onclick="quest(2)">
-        <strong>2</strong>
-        <br>
-        <acronym>He</acronym>
-        <br>
-        <em>Hélium</em>
-        <br>
-        <i>4.0<i>
-
-      </td>
-     </tr>
-
-     <tr>
-       <th>2</th>
-       <td onclick="quest(3)">
-       <strong>3</strong>
-        <br>
-        <acronym>Li</acronym>
-        <br>
-        <em>Lithium</em>
-        <br>
-        <i>6.9<i>
-      </td>
-       <td onclick="quest(4)">
-         <strong>4</strong>
-        <br>
-        <acronym>Be</acronym>
-        <br>
-        <em>Bérylium</em>
-        <br>
-        <i>9.0<i>
-       </td>
-       <td onclick="quest(5)">
-         <strong>5</strong>
-        <br>
-        <acronym>B</acronym>
-        <br>
-        <em>Bore</em>
-        <br>
-        <i>10.8<i>
-       </td>
-       <td onclick="quest(6)">
-         <strong>6</strong>
-        <br>
-        <acronym>C</acronym>
-        <br>
-        <em>Carbone</em>
-        <br>
-        <i>12.0<i>
-       </td>
-       <td onclick="quest(7)">
-        <strong>7</strong>
-        <br>
-        <acronym>N</acronym>
-        <br>
-        <em>Azote</em>
-        <br>
-        <i>14.0<i>
-       </td>
-       <td onclick="quest(8)">
-         <strong>8</strong>
-        <br>
-        <acronym>O</acronym>
-        <br>
-        <em>Oxygène</em>
-        <br>
-        <i>16.0<i>
-       </td>
-       <td onclick="quest(9)">
-         <strong>9</strong>
-        <br>
-        <acronym>F</acronym>
-        <br>
-        <em>Fluor</em>
-        <br>
-        <i>19.0<i>
-       </td>
-       <td onclick="quest(10)">
-         <strong>10</strong>
-        <br>
-        <acronym>Ne</acronym>
-        <br>
-        <em>Néon</em>
-        <br>
-        <i>20.2<i>
-       </td>
-     </tr>
-
-     <tr>
-       <th onclick="quest(11)">3</td>
-       <td onclick="quest(12)">
-         <strong>11</strong>
-        <br>
-        <acronym>Na</acronym>
-        <br>
-        <em>Sodium</em>
-        <br>
-        <i>23.0<i>
-       </td>
-       <td onclick="quest(13)">
-         <strong>12</strong>
-        <br>
-        <acronym>Mg</acronym>
-        <br>
-        <em>Magnésium</em>
-        <br>
-        <i>24.3<i>
-        </td>
-       <td onclick="quest(14)">
-         <strong>13</strong>
-        <br>
-        <acronym>Al</acronym>
-        <br>
-        <em>Aluminium</em>
-        <br>
-        <i>27.0<i>
-       </td>
-       <td onclick="quest(15)">
-         <strong>14</strong>
-        <br>
-        <acronym>Si</acronym>
-        <br>
-        <em>Silicium</em>
-        <br>
-        <i>28.1<i>
-       </td>
-       <td onclick="quest(16)">
-         <strong>15</strong>
-        <br>
-        <acronym>P</acronym>
-        <br>
-        <em>Phosphore</em>
-        <br>
-        <i>31.0<i>
-       </td>
-       <td onclick="quest(17)">
-         <strong>16</strong>
-        <br>
-        <acronym>S</acronym>
-        <br>
-        <em>Soufre</em>
-        <br>
-        <i>32.1<i>
-       </td>
-       <td onclick="quest(18)">
-         <strong>17</strong>
-        <br>
-        <acronym>Cl</acronym>
-        <br>
-        <em>Chlore</em>
-        <br>
-        <i>35.5<i>
-       </td>
-       <td onclick="quest(19)">
-         <strong>18</strong>
-        <br>
-        <acronym>Ar</acronym>
-        <br>
-        <em>Argon</em>
-        <br>
-        <i>39.9<i>
-       </td>
-     </tr>
-
-     <tr>
-     <th>4</th>
-     <td onclick="quest(21)">
-       <strong>19</strong>
-        <br>
-        <acronym>K</acronym>
-        <br>
-        <em>Potassium</em>
-        <br>
-        <i>39.1<i>
-     </td>
-     <td onclick="quest(22)">
-       <strong>20</strong>
-        <br>
-        <acronym>Ca</acronym>
-        <br>
-        <em>Calcium</em>
-        <br>
-        <i>40.1<i>
-     </td>
-     <td onclick="quest(23)">
-       <strong>21</strong>
-        <br>
-        <acronym>Sc</acronym>
-        <br>
-        <em>Scandium</em>
-        <br>
-        <i>45.0<i>
-     </td>
-     <td onclick="quest(24)">
-       <strong>22</strong>
-        <br>
-        <acronym>Ti</acronym>
-        <br>
-        <em>Titane</em>
-        <br>
-        <i>47.9<i>
-     </td>
-     <td onclick="quest(25)">
-       <strong>23</strong>
-        <br>
-        <acronym>V</acronym>
-        <br>
-        <em>Vanadium</em>
-        <br>
-        <i>50.9<i>
-     </td>
-     <td onclick="quest(26)">
-       <strong>24</strong>
-        <br>
-        <acronym>Cr</acronym>
-        <br>
-        <em>Chrome</em>
-        <br>
-        <i>52.0<i>
-     </td>
-     <td onclick="quest(27)">
-       <strong>25</strong>
-        <br>
-        <acronym>Mn</acronym>
-        <br>
-        <em>Manganèse</em>
-        <br>
-        <i>54.9<i>
-     </td>
-     <td onclick="quest(28)">
-       <strong>26</strong>
-        <br>
-        <acronym>Fe</acronym>
-        <br>
-        <em>Fer</em>
-        <br>
-        <i>55.8<i>
-     </td>
-     <td onclick="quest(29)">
-       <strong>27</strong>
-        <br>
-        <acronym>Co</acronym>
-        <br>
-        <em>Cobalt</em>
-        <br>
-        <i>58.9<i>
-     </td>
-     <td onclick="quest(30)">
-       <strong>28</strong>
-        <br>
-        <acronym>Ni</acronym>
-        <br>
-        <em>Nickel</em>
-        <br>
-        <i>58.7<i>
-     </td>
-     <td onclick="quest(31)">
-       <strong>29</strong>
-        <br>
-        <acronym>Cu</acronym>
-        <br>
-        <em>Cuivre</em>
-        <br>
-        <i>63.5<i>
-     </td>
-     <td onclick="quest(32)">
-       <strong>30</strong>
-        <br>
-        <acronym>Zn</acronym>
-        <br>
-        <em>Zinc</em>
-        <br>
-        <i>65.4<i>
-     </td>
-     <td onclick="quest(33)">
-       <strong>31</strong>
-        <br>
-        <acronym>Ga</acronym>
-        <br>
-        <em>Galium</em>
-        <br>
-        <i>69.7<i>
-     </td>
-     <td onclick="quest(34)">
-       <strong>32</strong>
-        <br>
-        <acronym>Ge</acronym>
-        <br>
-        <em>Germanium</em>
-        <br>
-        <i>72.6<i>
-     </td>
-     <td onclick="quest(35)">
-       <strong>33</strong>
-        <br>
-        <acronym>As</acronym>
-        <br>
-        <em>Arsenic</em>
-        <br>
-        <i>74.9<i>
-     </td>
-     <td onclick="quest(36)">
-       <strong>34</strong>
-        <br>
-        <acronym>Se</acronym>
-        <br>
-        <em>Sélénium</em>
-        <br>
-        <i>79.0<i>
-     </td>
-     <td onclick="quest(37)">
-       <strong>35</strong>
-        <br>
-        <acronym>Br</acronym>
-        <br>
-        <em>Brome</em>
-        <br>
-        <i>79.9<i>
-     </td>
-     <td onclick="quest(38)">
-       <strong>36</strong>
-        <br>
-        <acronym>Kr</acronym>
-        <br>
-        <em>Krypton</em>
-        <br>
-        <i>83.8<i>
-     </td>
-     </tr>
-     
-     <tr>
-     <th>5</th>
-     <td onclick="quest(40)">
-       <strong>37</strong>
-        <br>
-        <acronym>Rb</acronym>
-        <br>
-        <em>Rubidium</em>
-        <br>
-        <i>85.5<i>
-     </td>
-     <td onclick="quest(41)">
-       <strong>38</strong>
-        <br>
-        <acronym>Sr</acronym>
-        <br>
-        <em>Strontium</em>
-        <br>
-        <i>87.6<i>
-     </td>
-     <td onclick="quest(42)">
-       <strong>39</strong>
-        <br>
-        <acronym>Y</acronym>
-        <br>
-        <em>Yttrium</em>
-        <br>
-        <i>88.9<i>
-     </td>
-     <td onclick="quest(43)">
-       <strong>40</strong>
-        <br>
-        <acronym>Zr</acronym>
-        <br>
-        <em>Zirconium</em>
-        <br>
-        <i>91.2<i>
-     </td>
-     <td onclick="quest(44)">
-       <strong>41</strong>
-        <br>
-        <acronym>Nb</acronym>
-        <br>
-        <em>Niobiom</em>
-        <br>
-        <i>92.9<i>
-     </td>
-     <td onclick="quest(45)">
-       <strong>42</strong>
-        <br>
-        <acronym>Mo</acronym>
-        <br>
-        <em>molybdène</em>
-        <br>
-        <i>95.9<i>
-      </td>
-     <td onclick="quest(46)">
-       <strong>43</strong>
-        <br>
-        <acronym>Tc</acronym>
-        <br>
-        <em>Technétium</em>
-        <br>
-        <i>98.0<i>
-     </td>
-     <td onclick="quest(47)">
-       <strong>44</strong>
-        <br>
-        <acronym>Ru</acronym>
-        <br>
-        <em>Ruthénium</em>
-        <br>
-        <i>101.1<i>
-     </td>
-     <td onclick="quest(48)">
-       <strong>45</strong>
-        <br>
-        <acronym>Rh</acronym>
-        <br>
-        <em>Rhodium</em>
-        <br>
-        <i>102.9<i>
-     </td>
-     <td onclick="quest(49)">
-       <strong>46</strong>
-        <br>
-        <acronym>Pd</acronym>
-        <br>
-        <em>Palladium</em>
-        <br>
-        <i>106.4<i>
-     </td>
-     <td onclick="quest(50)">
-       <strong>47</strong>
-        <br>
-        <acronym>Ag</acronym>
-        <br>
-        <em>Argent</em>
-        <br>
-        <i>107.9<i>
-        </td>
-     <td onclick="quest(51)">
-       <strong>48</strong>
-        <br>
-        <acronym>Cd</acronym>
-        <br>
-        <em>Cadmium</em>
-        <br>
-        <i>112.4<i>
-     </td>
-     <td onclick="quest(52)">
-       <strong>49</strong>
-        <br>
-        <acronym>In</acronym>
-        <br>
-        <em>Indium</em>
-        <br>
-        <i>114.8<i>
-        </td>
-     <td onclick="quest(53)">
-       <strong>50</strong>
-        <br>
-        <acronym>Sn</acronym>
-        <br>
-        <em>Étain</em>
-        <br>
-        <i>118.7<i>
-     </td>
-     <td onclick="quest(54)">
-       <strong>51</strong>
-        <br>
-        <acronym>Sb</acronym>
-        <br>
-        <em>Antimoine</em>
-        <br>
-        <i>121.8<i>
-     </td>
-     <td onclick="quest(55)">
-      <strong>52</strong>
-        <br>
-        <acronym>Te</acronym>
-        <br>
-        <em>Tellure</em>
-        <br>
-        <i>127.6<i>
-     </td>
-     <td onclick="quest(56)">
-       <strong>53</strong>
-        <br>
-        <acronym>I</acronym>
-        <br>
-        <em>Iode</em>
-        <br>
-        <i>126.9<i>
-     </td>
-     <td onclick="quest(57)">
-       <strong>54</strong>
-        <br>
-        <acronym>Xe</acronym>
-        <br>
-        <em>Xénon</em>
-        <br>
-        <i>131.3<i>
-        </td>
-     </tr>
+     <th>1</th>
       
-      <tr>
-     <th>6</th>
-     <td onclick="quest(59)">
-       <strong>55</strong>
-        <br>
-        <acronym>Cs</acronym>
-        <br>
-        <em>Césium</em>
-        <br>
-        <i>132.9<i>
-        </td>
-     <td onclick="quest(60)">
-       <strong>56</strong>
-        <br>
-        <acronym>Ba</acronym>
-        <br>
-        <em>Baryum</em>
-        <br>
-        <i>137..3<i>
+       <td onclick="quest(1)" class = "nonMetals">
+       <strong>1</strong>
+       <br>
+       <acronym>H</acronym>
+       <br>
+       <em>Hydrogène</em>
+       <br>
+       <i>1.0<i>
+       </td>
+      
+ 
      </td>
-     <td onclick="quest(61)">
-       <strong>57</strong>
-        <br>
-        <acronym>La</acronym>
-        <br>
-        <em>Lanthane</em>
-        <br>
-        <i>138.9<i>
-     </td>
-     <td onclick="quest(62)">
-       <strong>72</strong>
-        <br>
-        <acronym>Hf</acronym>
-        <br>
-        <em>Hafnium</em>
-        <br>
-        <i>178.5<i>
-     </td>
-     <td onclick="quest(63)">
-       <strong>73</strong>
-        <br>
-        <acronym>Ta</acronym>
-        <br>
-        <em>Tantale</em>
-        <br>
-        <i>180.9<i>
-       
-     </td>
-     <td onclick="quest(64)">
-       <strong>74</strong>
-        <br>
-        <acronym>W</acronym>
-        <br>
-        <em>Tungstène</em>
-        <br>
-        <i>183.8<i>
-       
-     </td>
-     <td onclick="quest(65)">
-       <strong>75</strong>
-        <br>
-        <acronym>Re</acronym>
-        <br>
-        <em>Rhénium</em>
-        <br>
-        <i>186.2<i>
-       
-     </td>
-     <td onclick="quest(66)">
-       <strong>76</strong>
-        <br>
-        <acronym>Os</acronym>
-        <br>
-        <em>Osium</em>
-        <br>
-        <i>190.2<i>
-       
-     </td>
-     <td onclick="quest(67)">
-       <strong>77</strong>
-        <br>
-        <acronym>Ir</acronym>
-        <br>
-        <em>Iridium</em>
-        <br>
-        <i>192.2<i>
-       
-     </td>
-     <td onclick="quest(68)">
-       <strong>78</strong>
-        <br>
-        <acronym>Pt</acronym>
-        <br>
-        <em>Platine</em>
-        <br>
-        <i>195.1<i>
-       
-     </td>
-     <td onclick="quest(69)">
-       <strong>79</strong>
-        <br>
-        <acronym>Au</acronym>
-        <br>
-        <em>Or</em>
-        <br>
-        <i>197.0<i>
-       
-     </td>
-     <td onclick="quest(70)">
-       <strong>80</strong>
-        <br>
-        <acronym>Hg</acronym>
-        <br>
-        <em>Mercure</em>
-        <br>
-        <i>200.6<i>
-       
-     </td>
-     <td onclick="quest(71)">
-       <strong>81</strong>
-        <br>
-        <acronym>Tl</acronym>
-        <br>
-        <em>Thallium</em>
-        <br>
-        <i>204.4<i>
-       
-     </td>
-     <td onclick="quest(72)">
-       <strong>82</strong>
-        <br>
-        <acronym>Pb</acronym>
-        <br>
-        <em>Plomb</em>
-        <br>
-        <i>207.2<i>
-       
-     </td>
-     <td onclick="quest(73)">
-       <strong>83</strong>
-        <br>
-        <acronym>Bi</acronym>
-        <br>
-        <em>Bismuth</em>
-        <br>
-        <i>209.0<i>
-       
-     </td>
-     <td onclick="quest(74)">
-       <strong>84</strong>
-        <br>
-        <acronym>Po</acronym>
-        <br>
-        <em>Polonium</em>
-        <br>
-        <i>209.0<i>
-       
-     </td>
-     <td onclick="quest(75)">
-       <strong>85</strong>
-        <br>
-        <acronym>At</acronym>
-        <br>
-        <em>Astate</em>
-        <br>
-        <i>210.0<i>
-       
-     </td>
-     <td onclick="quest(76)">
-       <strong>86</strong>
-        <br>
-        <acronym>Rn</acronym>
-        <br>
-        <em>Radon</em>
-        <br>
-        <i>222.0<i>
-     </td>
-     </tr>
-     
-     <tr>
-     <th>7</th>
-     <td onclick="quest(78)">
-       <strong>87</strong>
-        <br>
-        <acronym>Fr</acronym>
-        <br>
-        <em>Francium</em>
-        <br>
-        <i>223.0<i>
-     </td>
-     <td onclick="quest(79)">
-       <strong>88</strong>
-        <br>
-        <acronym>Ra</acronym>
-        <br>
-        <em>Radium</em>
-        <br>
-        <i>226.0<i>
-     </td>
-     <td onclick="quest(80)">
-       <strong>89</strong>
-        <br>
-        <acronym>Ac</acronym>
-        <br>
-        <em>Actinium</em>
-        <br>
-        <i>227.0<i>
-     </td>
-     <td onclick="quest(81)">
-       <strong>104</strong>
-        <br>
-        <acronym>Rf</acronym>
-        <br>
-        <em>Rutherfordium</em>
-        <br>
-        <i>261.0<i>
-     </td>
-     <td onclick="quest(82)">
-       <strong>105</strong>
-        <br>
-        <acronym>Db</acronym>
-        <br>
-        <em>Dubnium</em>
-        <br>
-        <i>262.0<i>
-     </td>
-     <td onclick="quest(83)">
-       <strong>106</strong>
-        <br>
-        <acronym>Sg</acronym>
-        <br>
-        <em>Seaborgium</em>
-        <br>
-        <i>263.0<i>
-     </td>
-     <td>
-        <strong>107</strong>
-        <br>
-        <acronym>Bh</acronym>
-        <br>
-        <em>Bohrium</em>
-        <br>
-        <i>262.0<i>
-     </td>
-     <td onclick="quest(84)">
-       <strong>108</strong>
-        <br>
-        <acronym>Hs</acronym>
-        <br>
-        <em>Hassium</em>
-        <br>
-        <i>265.0<i>
-     </td>
-     <td onclick="quest(85)">
-       <strong>109</strong>
-        <br>
-        <acronym>Mt</acronym>
-        <br>
-        <em>Meitnerium</em>
-        <br>
-        <i>266.0<i>
-     </td>
-     <td onclick="quest(86)">
-       <strong>110</strong>
-        <br>
-        <acronym>Ds</acronym>
-        <br>
-        <em>Darmstadium</em>
-        <br>
-        <i>281.0<i>
-     </td>
-     <td onclick="quest(87)">
-       <strong>111</strong>
-        <br>
-        <acronym>Rg</acronym>
-        <br>
-        <em>Roentgenium</em>
-        <br>
-        <i>272.0<i>
-     </td>
-     <td onclick="quest(88)">
-       <strong>112</strong>
-        <br>
-        <acronym>Uub</acronym>
-        <br>
-        <em>Ununbium</em>
-        <br>
-        <i>285.0<i>
-     </td>
-     <td onclick="quest(89)">
-       <strong>113</strong>
-        <br>
-        <acronym>Uut</acronym>
-        <br>
-        <em>Ununtrium</em>
-        <br>
-        <i>284.0<i>
-     </td>
-     <td onclick="quest(90)">
-       <strong>114</strong>
-        <br>
-        <acronym>Uuq</acronym>
-        <br>
-        <em>Ununquadium</em>
-        <br>
-        <i>289.0<i>
-     </td>
-     <td onclick="quest(91)">
-       <strong>115</strong>
-        <br>
-        <acronym>Uup</acronym>
-        <br>
-        <em>Ununpentium</em>
-        <br>
-        <i>288.0<i>
-     </td>
-     <td onclick="quest(92)">
-       <strong>116</strong>
-        <br>
-        <acronym>Uuh</acronym>
-        <br>
-        <em>Ununhexium</em>
-        <br>
-        <i><i>
-     </td>
-     
      <th></th>
-     <td onclick="quest(94)">
-       <strong>118</strong>
-        <br>
-        <acronym>Uuo</acronym>
-        <br>
-        <em>Ununoctium</em>
-        <br>
-        <i>294.0<i>
+     <th colspan="10" rowspan="3"><h1>Jeu de tableau periodique</h1></th>
+     <th colspan="5">Score = <div id="sc"></div></th>
+ 
+     <td onclick="quest(2)" class="gasNoble">
+       <strong>2</strong>
+       <br>
+       <acronym>He</acronym>
+       <br>
+       <em>Hélium</em>
+       <br>
+       <i>4.0<i>
+ 
      </td>
-     </tr>    
-  </tbody>
- </thead>
+    </tr>
+ 
+    <tr>
+      <th>2</th>
+      <td onclick="quest(3)" class = "alkMetals">
+      <strong>3</strong>
+       <br>
+       <acronym>Li</acronym>
+       <br>
+       <em>Lithium</em>
+       <br>
+       <i>6.9<i>
+     </td>
+      <td onclick="quest(4)" class="alkTerre">
+        <strong>4</strong>
+       <br>
+       <acronym>Be</acronym>
+       <br>
+       <em>Bérylium</em>
+       <br>
+       <i>9.0<i>
+      </td>
+      <td onclick="quest(5)" class="metaloides">
+        <strong>5</strong>
+       <br>
+       <acronym>B</acronym>
+       <br>
+       <em>Bore</em>
+       <br>
+       <i>10.8<i>
+      </td>
+      <td onclick="quest(6)" class = "nonMetals">
+      
+       <strong>6</strong>
+       <br>
+       <acronym>C</acronym>
+       <br>
+       <em>Carbone</em>
+       <br>
+       <i>12.0<i>
+      </td>
+     
+      <td onclick="quest(7)" class = "nonMetals">
+       <strong>7</strong>
+       <br>
+       <acronym>N</acronym>
+       <br>
+       <em>Azote</em>
+       <br>
+       <i>14.0<i>
+      </td>
+      <td onclick="quest(8)" class = "nonMetals">
+        <strong>8</strong>
+       <br>
+       <acronym>O</acronym>
+       <br>
+       <em>Oxygène</em>
+       <br>
+       <i>16.0<i>
+      </td>
+      <td onclick="quest(9)" class = "nonMetals">
+        <strong>9</strong>
+       <br>
+       <acronym>F</acronym>
+       <br>
+       <em>Fluor</em>
+       <br>
+       <i>19.0<i>
+      </td>
+      <td onclick="quest(10)" class="gasNoble">
+        <strong>10</strong>
+       <br>
+       <acronym>Ne</acronym>
+       <br>
+       <em>Néon</em>
+       <br>
+       <i>20.2<i>
+      </td>
+    </tr>
+ 
+    <tr>
+      <th>3</th>
+      <td onclick="quest(11)" class = "alkMetals">
+        <strong>11</strong>
+       <br>
+       <acronym>Na</acronym>
+       <br>
+       <em>Sodium</em>
+       <br>
+       <i>23.0<i>
+      </td>
+      <td onclick="quest(12)" class="alkTerre">
+        <strong>12</strong>
+       <br>
+       <acronym>Mg</acronym>
+       <br>
+       <em>Magnésium</em>
+       <br>
+       <i>24.3<i>
+       </td>
+      <td onclick="quest(13)"class="metalPauvre">
+        <strong>13</strong>
+       <br>
+       <acronym>Al</acronym>
+       <br>
+       <em>Aluminium</em>
+       <br>
+       <i>27.0<i>
+      </td>
+      <td onclick="quest(14)" class="metaloides">
+        <strong>14</strong>
+       <br>
+       <acronym>Si</acronym>
+       <br>
+       <em>Silicium</em>
+       <br>
+       <i>28.1<i>
+      </td>
+      <td onclick="quest(15)" class = "nonMetals">
+        <strong>15</strong>
+       <br>
+       <acronym>P</acronym>
+       <br>
+       <em>Phosphore</em>
+       <br>
+       <i>31.0<i>
+      </td>
+      <td onclick="quest(16)" class = "nonMetals">
+        <strong>16</strong>
+       <br>
+       <acronym>S</acronym>
+       <br>
+       <em>Soufre</em>
+       <br>
+       <i>32.1<i>
+      </td>
+      <td onclick="quest(17)" class = "nonMetals">
+        <strong>17</strong>
+       <br>
+       <acronym>Cl</acronym>
+       <br>
+       <em>Chlore</em>
+       <br>
+       <i>35.5<i>
+      </td>
+      <td onclick="quest(18)" class="gasNoble">
+        <strong>18</strong>
+       <br>
+       <acronym>Ar</acronym>
+       <br>
+       <em>Argon</em>
+       <br>
+       <i>39.9<i>
+      </td>
+    </tr>
+ 
+    <tr>
+    <th>4</th>
+    <td onclick="quest(19)" class = "alkMetals">
+      <strong>19</strong>
+       <br>
+       <acronym>K</acronym>
+       <br>
+       <em>Potassium</em>
+       <br>
+       <i>39.1<i>
+    </td>
+    <td onclick="quest(20)" class="alkTerre">
+      <strong>20</strong>
+       <br>
+       <acronym>Ca</acronym>
+       <br>
+       <em>Calcium</em>
+       <br>
+       <i>40.1<i>
+    </td>
+    <td onclick="quest(21)" class="metauDeTransition">
+      <strong>21</strong>
+       <br>
+       <acronym>Sc</acronym>
+       <br>
+       <em>Scandium</em>
+       <br>
+       <i>45.0<i>
+    </td>
+    <td onclick="quest(22)" class="metauDeTransition">
+      <strong>22</strong>
+       <br>
+       <acronym>Ti</acronym>
+       <br>
+       <em>Titane</em>
+       <br>
+       <i>47.9<i>
+    </td>
+    <td onclick="quest(23)" class="metauDeTransition">
+      <strong>23</strong>
+       <br>
+       <acronym>V</acronym>
+       <br>
+       <em>Vanadium</em>
+       <br>
+       <i>50.9<i>
+    </td>
+    <td onclick="quest(24)" class="metauDeTransition">
+      <strong>24</strong>
+       <br>
+       <acronym>Cr</acronym>
+       <br>
+       <em>Chrome</em>
+       <br>
+       <i>52.0<i>
+    </td>
+    <td onclick="quest(25)" class="metauDeTransition">
+      <strong>25</strong>
+       <br>
+       <acronym>Mn</acronym>
+       <br>
+       <em>Manganèse</em>
+       <br>
+       <i>54.9<i>
+    </td>
+    <td onclick="quest(26)" class="metauDeTransition">
+      <strong>26</strong>
+       <br>
+       <acronym>Fe</acronym>
+       <br>
+       <em>Fer</em>
+       <br>
+       <i>55.8<i>
+    </td>
+    <td onclick="quest(27)" class="metauDeTransition">
+      <strong>27</strong>
+       <br>
+       <acronym>Co</acronym>
+       <br>
+       <em>Cobalt</em>
+       <br>
+       <i>58.9<i>
+    </td>
+    <td onclick="quest(28)" class="metauDeTransition">
+      <strong>28</strong>
+       <br>
+       <acronym>Ni</acronym>
+       <br>
+       <em>Nickel</em>
+       <br>
+       <i>58.7<i>
+    </td>
+    <td onclick="quest(29)" class="metauDeTransition">
+      <strong>29</strong>
+       <br>
+       <acronym>Cu</acronym>
+       <br>
+       <em>Cuivre</em>
+       <br>
+       <i>63.5<i>
+    </td>
+    <td onclick="quest(30)" class="metauDeTransition">
+      <strong>30</strong>
+       <br>
+       <acronym>Zn</acronym>
+       <br>
+       <em>Zinc</em>
+       <br>
+       <i>65.4<i>
+    </td>
+    <td onclick="quest(31)" class="metalPauvre">
+      <strong>31</strong>
+       <br>
+       <acronym>Ga</acronym>
+       <br>
+       <em>Galium</em>
+       <br>
+       <i>69.7<i>
+    </td>
+    <td onclick="quest(32)" class="metaloides">
+      <strong>32</strong>
+       <br>
+       <acronym>Ge</acronym>
+       <br>
+       <em>Germanium</em>
+       <br>
+       <i>72.6<i>
+    </td>
+    <td onclick="quest(33)" class="metaloides">
+      <strong>33</strong>
+       <br>
+       <acronym>As</acronym>
+       <br>
+       <em>Arsenic</em>
+       <br>
+       <i>74.9<i>
+    </td>
+    <td onclick="quest(34)" class = "nonMetals">
+      <strong>34</strong>
+       <br>
+       <acronym>Se</acronym>
+       <br>
+       <em>Sélénium</em>
+       <br>
+       <i>79.0<i>
+    </td>
+    <td onclick="quest(35)" class = "nonMetals">
+      <strong>35</strong>
+       <br>
+       <acronym>Br</acronym>
+       <br>
+       <em>Brome</em>
+       <br>
+       <i>79.9<i>
+    </td>
+    <td onclick="quest(36)" class="gasNoble">
+      <strong>36</strong>
+       <br>
+       <acronym>Kr</acronym>
+       <br>
+       <em>Krypton</em>
+       <br>
+       <i>83.8<i>
+    </td>
+    </tr>
+   
+    <tr>
+    <th>5</th>
+    <td onclick="quest(37)" class = "alkMetals">
+      <strong>37</strong>
+       <br>
+       <acronym>Rb</acronym>
+       <br>
+       <em>Rubidium</em>
+       <br>
+       <i>85.5<i>
+    </td>
+    <td onclick="quest(38)" class="alkTerre">
+      <strong>38</strong>
+       <br>
+       <acronym>Sr</acronym>
+       <br>
+       <em>Strontium</em>
+       <br>
+       <i>87.6<i>
+    </td>
+    <td onclick="quest(39)" class="metauDeTransition">
+      <strong>39</strong>
+       <br>
+       <acronym>Y</acronym>
+       <br>
+       <em>Yttrium</em>
+       <br>
+       <i>88.9<i>
+    </td>
+    <td onclick="quest(40)" class="metauDeTransition">
+      <strong>40</strong>
+       <br>
+       <acronym>Zr</acronym>
+       <br>
+       <em>Zirconium</em>
+       <br>
+       <i>91.2<i>
+    </td>
+    <td onclick="quest(41)" class="metauDeTransition">
+      <strong>41</strong>
+       <br>
+       <acronym>Nb</acronym>
+       <br>
+       <em>Niobiom</em>
+       <br>
+       <i>92.9<i>
+    </td>
+    <td onclick="quest(42)" class="metauDeTransition">
+      <strong>42</strong>
+       <br>
+       <acronym>Mo</acronym>
+       <br>
+       <em>molybdène</em>
+       <br>
+       <i>95.9<i>
+     </td>
+    <td onclick="quest(43)" class="metauDeTransition">
+      <strong>43</strong>
+       <br>
+       <acronym>Tc</acronym>
+       <br>
+       <em>Technétium</em>
+       <br>
+       <i>98.0<i>
+    </td>
+    <td onclick="quest(44)" class="metauDeTransition">
+      <strong>44</strong>
+       <br>
+       <acronym>Ru</acronym>
+       <br>
+       <em>Ruthénium</em>
+       <br>
+       <i>101.1<i>
+    </td>
+    <td onclick="quest(45)" class="metauDeTransition">
+      <strong>45</strong>
+       <br>
+       <acronym>Rh</acronym>
+       <br>
+       <em>Rhodium</em>
+       <br>
+       <i>102.9<i>
+    </td>
+    <td onclick="quest(46)" class="metauDeTransition">
+      <strong>46</strong>
+       <br>
+       <acronym>Pd</acronym>
+       <br>
+       <em>Palladium</em>
+       <br>
+       <i>106.4<i>
+    </td>
+    <td onclick="quest(47)" class="metauDeTransition">
+      <strong>47</strong>
+       <br>
+       <acronym>Ag</acronym>
+       <br>
+       <em>Argent</em>
+       <br>
+       <i>107.9<i>
+       </td>
+    <td onclick="quest(48)" class="metauDeTransition">
+      <strong>48</strong>
+       <br>
+       <acronym>Cd</acronym>
+       <br>
+       <em>Cadmium</em>
+       <br>
+       <i>112.4<i>
+    </td>
+    <td onclick="quest(49)" class="metalPauvre">
+      <strong>49</strong>
+       <br>
+       <acronym>In</acronym>
+       <br>
+       <em>Indium</em>
+       <br>
+       <i>114.8<i>
+       </td>
+    <td onclick="quest(50)" class="metalPauvre">
+      <strong>50</strong>
+       <br>
+       <acronym>Sn</acronym>
+       <br>
+       <em>Étain</em>
+       <br>
+       <i>118.7<i>
+    </td>
+    <td onclick="quest(51)" class="metaloides">
+      <strong>51</strong>
+       <br>
+       <acronym>Sb</acronym>
+       <br>
+       <em>Antimoine</em>
+       <br>
+       <i>121.8<i>
+    </td>
+    <td onclick="quest(52)" class="metaloides">
+     <strong>52</strong>
+       <br>
+       <acronym>Te</acronym>
+       <br>
+       <em>Tellure</em>
+       <br>
+       <i>127.6<i>
+    </td>
+    <td onclick="quest(53)" class = "nonMetals">
+      <strong>53</strong>
+       <br>
+       <acronym>I</acronym>
+       <br>
+       <em>Iode</em>
+       <br>
+       <i>126.9<i>
+    </td>
+    <td onclick="quest(54)" class="gasNoble">
+      <strong>54</strong>
+       <br>
+       <acronym>Xe</acronym>
+       <br>
+       <em>Xénon</em>
+       <br>
+       <i>131.3<i>
+       </td>
+    </tr>
+    
+     <tr>
+    <th>6</th>
+    <td onclick="quest(55)" class = "alkMetals">
+      <strong>55</strong>
+       <br>
+       <acronym>Cs</acronym>
+       <br>
+       <em>Césium</em>
+       <br>
+       <i>132.9<i>
+       </td>
+    <td onclick="quest(56)" class="alkTerre">
+      <strong>56</strong>
+       <br>
+       <acronym>Ba</acronym>
+       <br>
+       <em>Baryum</em>
+       <br>
+       <i>137..3<i>
+    </td>
+    <td onclick="quest(57)" class="metauDeTransition">
+      <strong>57</strong>
+       <br>
+       <acronym>La</acronym>
+       <br>
+       <em>Lanthane</em>
+       <br>
+       <i>138.9<i>
+    </td>
+    <td onclick="quest(58)" class="metauDeTransition">
+      <strong>72</strong>
+       <br>
+       <acronym>Hf</acronym>
+       <br>
+       <em>Hafnium</em>
+       <br>
+       <i>178.5<i>
+    </td>
+    <td onclick="quest(59)" class="metauDeTransition">
+      <strong>73</strong>
+       <br>
+       <acronym>Ta</acronym>
+       <br>
+       <em>Tantale</em>
+       <br>
+       <i>180.9<i>
+     
+    </td>
+    <td onclick="quest(60)" class="metauDeTransition">
+      <strong>74</strong>
+       <br>
+       <acronym>W</acronym>
+       <br>
+       <em>Tungstène</em>
+       <br>
+       <i>183.8<i>
+     
+    </td>
+    <td onclick="quest(61)" class="metauDeTransition">
+      <strong>75</strong>
+       <br>
+       <acronym>Re</acronym>
+       <br>
+       <em>Rhénium</em>
+       <br>
+       <i>186.2<i>
+     
+    </td>
+    <td onclick="quest(62)" class="metauDeTransition">
+      <strong>76</strong>
+       <br>
+       <acronym>Os</acronym>
+       <br>
+       <em>Osium</em>
+       <br>
+       <i>190.2<i>
+     
+    </td>
+    <td onclick="quest(63)" class="metauDeTransition">
+      <strong>77</strong>
+       <br>
+       <acronym>Ir</acronym>
+       <br>
+       <em>Iridium</em>
+       <br>
+       <i>192.2<i>
+     
+    </td>
+    <td onclick="quest(64)" class="metauDeTransition">
+      <strong>78</strong>
+       <br>
+       <acronym>Pt</acronym>
+       <br>
+       <em>Platine</em>
+       <br>
+       <i>195.1<i>
+     
+    </td>
+    <td onclick="quest(65)" class="metauDeTransition">
+      <strong>79</strong>
+       <br>
+       <acronym>Au</acronym>
+       <br>
+       <em>Or</em>
+       <br>
+       <i>197.0<i>
+     
+    </td>
+    <td onclick="quest(66)" class="metauDeTransition">
+      <strong>80</strong>
+       <br>
+       <acronym>Hg</acronym>
+       <br>
+       <em>Mercure</em>
+       <br>
+       <i>200.6<i>
+     
+    </td>
+    <td onclick="quest(67)" class="metalPauvre">
+      <strong>81</strong>
+       <br>
+       <acronym>Tl</acronym>
+       <br>
+       <em>Thallium</em>
+       <br>
+       <i>204.4<i>
+     
+    </td>
+    <td onclick="quest(68)" class="metalPauvre">
+      <strong>82</strong>
+       <br>
+       <acronym>Pb</acronym>
+       <br>
+       <em>Plomb</em>
+       <br>
+       <i>207.2<i>
+     
+    </td>
+    <td onclick="quest(69)" class="metalPauvre">
+      <strong>83</strong>
+       <br>
+       <acronym>Bi</acronym>
+       <br>
+       <em>Bismuth</em>
+       <br>
+       <i>209.0<i>
+     
+    </td>
+    <td onclick="quest(70)" class="metalPauvre">
+      <strong>84</strong>
+       <br>
+       <acronym>Po</acronym>
+       <br>
+       <em>Polonium</em>
+       <br>
+       <i>209.0<i>
+     
+    </td>
+    <td onclick="quest(71)" class="metaloides">
+      <strong>85</strong>
+       <br>
+       <acronym>At</acronym>
+       <br>
+       <em>Astate</em>
+       <br>
+       <i>210.0<i>
+     
+    </td>
+    <td onclick="quest(72)" class="gasNoble">
+      <strong>86</strong>
+       <br>
+       <acronym>Rn</acronym>
+       <br>
+       <em>Radon</em>
+       <br>
+       <i>222.0<i>
+    </td>
+    </tr>
+   
+    <tr>
+    <th>7</th>
+    <td onclick="quest(73)" class = "alkMetals">
+      <strong>87</strong>
+       <br>
+       <acronym>Fr</acronym>
+       <br>
+       <em>Francium</em>
+       <br>
+       <i>223.0<i>
+    </td>
+    <td onclick="quest(74)" class="alkTerre">
+      <strong>88</strong>
+       <br>
+       <acronym>Ra</acronym>
+       <br>
+       <em>Radium</em>
+       <br>
+       <i>226.0<i>
+    </td>
+    <td onclick="quest(75)" class="metauDeTransition">
+      <strong>89</strong>
+       <br>
+       <acronym>Ac</acronym>
+       <br>
+       <em>Actinium</em>
+       <br>
+       <i>227.0<i>
+    </td>
+    <td onclick="quest(76)" class="metauDeTransition">
+      <strong>104</strong>
+       <br>
+       <acronym>Rf</acronym>
+       <br>
+       <em>Rutherfordium</em>
+       <br>
+       <i>261.0<i>
+    </td>
+    <td onclick="quest(77)" class="metauDeTransition">
+      <strong>105</strong>
+       <br>
+       <acronym>Db</acronym>
+       <br>
+       <em>Dubnium</em>
+       <br>
+       <i>262.0<i>
+    </td>
+    <td onclick="quest(78)" class="metauDeTransition">
+      <strong>106</strong>
+       <br>
+       <acronym>Sg</acronym>
+       <br>
+       <em>Seaborgium</em>
+       <br>
+       <i>263.0<i>
+    </td>
+    <td onclick="quest(79)" class="metauDeTransition">
+       <strong>107</strong>
+       <br>
+       <acronym>Bh</acronym>
+       <br>
+       <em>Bohrium</em>
+       <br>
+       <i>262.0<i>
+    </td>
+    <td onclick="quest(80)" class="metauDeTransition">
+      <strong>108</strong>
+       <br>
+       <acronym>Hs</acronym>
+       <br>
+       <em>Hassium</em>
+       <br>
+       <i>265.0<i>
+    </td>
+    <td onclick="quest(80)" class="artificiel">
+      <strong>109</strong>
+       <br>
+       <acronym>Mt</acronym>
+       <br>
+       <em>Meitnerium</em>
+       <br>
+       <i>266.0<i>
+    </td>
+    <td onclick="quest(81)" class="artificiel">
+      <strong>110</strong>
+       <br>
+       <acronym>Ds</acronym>
+       <br>
+       <em>Darmstadium</em>
+       <br>
+       <i>281.0<i>
+    </td>
+    <td onclick="quest(82)" class="artificiel">
+      <strong>111</strong>
+       <br>
+       <acronym>Rg</acronym>
+       <br>
+       <em>Roentgenium</em>
+       <br>
+       <i>272.0<i>
+    </td>
+    <td onclick="quest(83)" class="artificiel">
+      <strong>112</strong>
+       <br>
+       <acronym>Uub</acronym>
+       <br>
+       <em>Ununbium</em>
+       <br>
+       <i>285.0<i>
+    </td>
+    <td onclick="quest(84)" class="artificiel">
+      <strong>113</strong>
+       <br>
+       <acronym>Uut</acronym>
+       <br>
+       <em>Ununtrium</em>
+       <br>
+       <i>284.0<i>
+    </td>
+    <td onclick="quest(85)" class="artificiel">
+      <strong>114</strong>
+       <br>
+       <acronym>Uuq</acronym>
+       <br>
+       <em>Ununquadium</em>
+       <br>
+       <i>289.0<i>
+    </td>
+    <td onclick="quest(86)" class="artificiel">
+      <strong>115</strong>
+       <br>
+       <acronym>Uup</acronym>
+       <br>
+       <em>Ununpentium</em>
+       <br>
+       <i>288.0<i>
+    </td>
+    <td onclick="quest(87)" class="artificiel">
+      <strong>116</strong>
+       <br>
+       <acronym>Uuh</acronym>
+       <br>
+       <em>Ununhexium</em>
+       <br>
+       <i><i>
+    </td>
+   
+    <th></th>
+    <td onclick="quest(88)" class="artificiel">
+      <strong>118</strong>
+       <br>
+       <acronym>Uuo</acronym>
+       <br>
+       <em>Ununoctium</em>
+       <br>
+       <i>294.0<i>
+    </td>
+    </tr>   
+ </tbody>
+</thead>
 </table>
-
-
+ 
+ 
 <script src="script.js"></script>
 <div class= "questionDiv" id = "divAffiche"></div>
-  
     </body>
 </html>

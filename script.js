@@ -1,39 +1,54 @@
-var score=0;
-var x=0;
-var z=0;    
-function quest(x){
-
-  switch(x){
-  case 1:
-    document.getElementById('divAffiche').innerHTML = "Quelle est letat de hydrogene"+
-    "<form id = 'questUn'>"+" <label for = 'otpion'> </label>"+
-   " <input type = 'radio' name = 'questRad' value = 'Gaz'/>Gaz"
-   +"<br>"+
-   "<input type = 'radio' name = 'questRad' value = 'Liquid'/>Liquid"
-   +"<br>" + 
-   "<input type = 'radio' name = 'questRad' value = 'Solid'/>Solid"
-   + "<br>"+
-   "<input type='button' value = 'Soummettre reponse' onclick='sou(1)'>"
-    
-   +"</form>";
-   
-    break;
-
-  case 2:
-    score = score+ 2;
-    document.getElementById('sc').innerHTML = score;
-    break;
-    
-  }
+score = 0;
+ 
+var element = [
+ [0,1,2,3,4],
+ ["","H","He","Li","Be"],
+ ["","G","G","S","S"],
+];
+ 
+function quest(numElement){
+ document.getElementById('divAffiche').innerHTML = "Quelle est letat naturel de l'element"+
+   "<form id = 'questUn'>"+" <label for = 'otpion'> </label>"+
+  " <input type = 'radio' name = 'questRad' id = 'etat' value = 'G'/>Gaz"
+  +"<br>"+
+  "<input type = 'radio' name = 'questRad' id = 'etat' value = 'L'/>Liquid"
+  +"<br>" +
+  "<input type = 'radio' name = 'questRad' id = 'etat' value = 'S'/>Solid"
+  + "<br>"+
+  "<input type='button' value = 'Soummettre reponse' onclick='verifieEtat("+numElement +")'" +"</form>";
 }
-
-
-function sou(z){
-  var rep = document.getElementsById("questUn");
-      if(documen.form[i].checked){
-
+ 
+function getEtat(){
+ 
+ var rep = document.getElementsByName("questRad");
+    
+      var etat = "";
+      for (var i = 0; i < rep.length; i++) {
+          if (rep[i].checked) {
+              etat = rep[i].value;
+          }
       }
-      document.getElementById('divAffiche').innerHTML = "la reponce est gaz";
-      document.getElementById('sc').innerHTML = score;
-          
+ return etat
+}
+ 
+ 
+ 
+function verifieEtat(numElement){
+ 
+  var etat = getEtat();
+ 
+ 
+   if (etat==etat){
+      document.getElementById('divAffiche').innerHTML = "bonne reponce!!!";
+     score= score + 20
+     document.getElementById('sc').innerHTML = score;
+   }
+ 
+   if(etat!=etat){
+        document.getElementById('divAffiche').innerHTML = "mauvaise reponce";
+    
+     document.getElementById('sc').innerHTML = score;
+    
+   }
+   
 }
