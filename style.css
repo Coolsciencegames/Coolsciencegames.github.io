@@ -1,15 +1,16 @@
 table, td{
  border: 1px solid black;
  overflow: hidden;
+
 }
 td:hover{
  border-color: rgb(0, 4, 255);
  border-width: 1px;
  position: relative;
+ 
 }
 table{
  width: 100% ;
- 
 }
 em,i{
  width: 4.456em;

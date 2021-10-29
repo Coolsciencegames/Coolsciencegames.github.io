@@ -8,10 +8,10 @@
  </head>
  <body>
  
- 
+ <!--la table qui contien le tableau periodique-->
 <table>
 <thead>
-  <tr>
+  <tr><!-- la tete de la table (contien le nombre de ranger)-->
    <th></th>
    <th>1</th>
    <th>2</th>
@@ -33,27 +33,27 @@
    <th>18</th>
   </tr>
  
- <tbody>
+ <tbody> <!--le corps du tableau. contien toutes les elements-->
    <tr>
      <th>1</th>
-      
-       <td onclick="quest(1)" class = "nonMetals">
-       <strong>1</strong>
+      <!--toutes les td contien les meme parametre-->
+       <td onclick='quest(1)' class = "nonMetals"><!--le onclick qui comence la fonction, classe pour le css.-->
+       <strong>1</strong><!--numeros atomique-->
        <br>
-       <acronym>H</acronym>
+       <acronym>H</acronym><!--symbol-->
        <br>
-       <em>Hydrogène</em>
+       <em>Hydrogène</em><!--nem de lelement-->
        <br>
-       <i>1.0<i>
+       <i>1.0<i><!--masse atomique-->
        </td>
       
  
      </td>
      <th></th>
-     <th colspan="10" rowspan="3"><h1>Jeu de tableau periodique</h1></th>
-     <th colspan="5">Score = <div id="sc"></div></th>
+     <th colspan="10" rowspan="3"><h1>Jeu de tableau periodique</h1></th> <!--une bulle pour lespace dans le tableau-->
+     <th colspan="5">Score = <div id="sc"></div></th><!--le div qui afiche le pointage-->
  
-     <td onclick="quest(2)" class="gasNoble">
+     <td onclick='quest(2); this.onclick = null;' class="gasNoble">
        <strong>2</strong>
        <br>
        <acronym>He</acronym>
@@ -67,7 +67,7 @@
  
     <tr>
       <th>2</th>
-      <td onclick="quest(3)" class = "alkMetals">
+      <td onclick='quest(3); this.onclick = null;' class = "alkMetals">
       <strong>3</strong>
        <br>
        <acronym>Li</acronym>
@@ -76,7 +76,7 @@
        <br>
        <i>6.9<i>
      </td>
-      <td onclick="quest(4)" class="alkTerre">
+      <td onclick='quest(4); this.onclick = null;' class="alkTerre">
         <strong>4</strong>
        <br>
        <acronym>Be</acronym>
@@ -85,7 +85,7 @@
        <br>
        <i>9.0<i>
       </td>
-      <td onclick="quest(5)" class="metaloides">
+      <td onclick='quest(5); this.onclick = null;' class="metaloides">
         <strong>5</strong>
        <br>
        <acronym>B</acronym>
@@ -94,7 +94,7 @@
        <br>
        <i>10.8<i>
       </td>
-      <td onclick="quest(6)" class = "nonMetals">
+      <td onclick='quest(6); this.onclick = null;' class = "nonMetals">
       
        <strong>6</strong>
        <br>
@@ -105,7 +105,7 @@
        <i>12.0<i>
       </td>
      
-      <td onclick="quest(7)" class = "nonMetals">
+      <td onclick='quest(7); this.onclick = null;' class = "nonMetals">
        <strong>7</strong>
        <br>
        <acronym>N</acronym>
@@ -114,7 +114,7 @@
        <br>
        <i>14.0<i>
       </td>
-      <td onclick="quest(8)" class = "nonMetals">
+      <td onclick='quest(8); this.onclick = null;' class = "nonMetals">
         <strong>8</strong>
        <br>
        <acronym>O</acronym>
@@ -123,7 +123,7 @@
        <br>
        <i>16.0<i>
       </td>
-      <td onclick="quest(9)" class = "nonMetals">
+      <td onclick='quest(9); this.onclick = null;' class = "nonMetals">
         <strong>9</strong>
        <br>
        <acronym>F</acronym>
@@ -132,7 +132,7 @@
        <br>
        <i>19.0<i>
       </td>
-      <td onclick="quest(10)" class="gasNoble">
+      <td onclick='quest(10); this.onclick = null;' class="gasNoble">
         <strong>10</strong>
        <br>
        <acronym>Ne</acronym>
@@ -145,7 +145,7 @@
  
     <tr>
       <th>3</th>
-      <td onclick="quest(11)" class = "alkMetals">
+      <td onclick='quest(11); this.onclick = null;' class = "alkMetals">
         <strong>11</strong>
        <br>
        <acronym>Na</acronym>
@@ -154,7 +154,7 @@
        <br>
        <i>23.0<i>
       </td>
-      <td onclick="quest(12)" class="alkTerre">
+      <td onclick='quest(12); this.onclick = null;' class="alkTerre">
         <strong>12</strong>
        <br>
        <acronym>Mg</acronym>
@@ -163,7 +163,7 @@
        <br>
        <i>24.3<i>
        </td>
-      <td onclick="quest(13)"class="metalPauvre">
+      <td onclick='quest(13); this.onclick = null;'class="metalPauvre">
         <strong>13</strong>
        <br>
        <acronym>Al</acronym>
@@ -172,7 +172,7 @@
        <br>
        <i>27.0<i>
       </td>
-      <td onclick="quest(14)" class="metaloides">
+      <td onclick='quest(14); this.onclick = null;' class="metaloides">
         <strong>14</strong>
        <br>
        <acronym>Si</acronym>
@@ -181,7 +181,7 @@
        <br>
        <i>28.1<i>
       </td>
-      <td onclick="quest(15)" class = "nonMetals">
+      <td onclick='quest(15); this.onclick = null;' class = "nonMetals">
         <strong>15</strong>
        <br>
        <acronym>P</acronym>
@@ -190,7 +190,7 @@
        <br>
        <i>31.0<i>
       </td>
-      <td onclick="quest(16)" class = "nonMetals">
+      <td onclick='quest(16); this.onclick = null;' class = "nonMetals">
         <strong>16</strong>
        <br>
        <acronym>S</acronym>
@@ -199,7 +199,7 @@
        <br>
        <i>32.1<i>
       </td>
-      <td onclick="quest(17)" class = "nonMetals">
+      <td onclick='quest(17); this.onclick = null;' class = "nonMetals">
         <strong>17</strong>
        <br>
        <acronym>Cl</acronym>
@@ -208,7 +208,7 @@
        <br>
        <i>35.5<i>
       </td>
-      <td onclick="quest(18)" class="gasNoble">
+      <td onclick='quest(18); this.onclick = null;' class="gasNoble">
         <strong>18</strong>
        <br>
        <acronym>Ar</acronym>
@@ -221,7 +221,7 @@
  
     <tr>
     <th>4</th>
-    <td onclick="quest(19)" class = "alkMetals">
+    <td onclick='quest(19); this.onclick = null;' class = "alkMetals">
       <strong>19</strong>
        <br>
        <acronym>K</acronym>
@@ -230,7 +230,7 @@
        <br>
        <i>39.1<i>
     </td>
-    <td onclick="quest(20)" class="alkTerre">
+    <td onclick='quest(20); this.onclick = null;' class="alkTerre">
       <strong>20</strong>
        <br>
        <acronym>Ca</acronym>
@@ -239,7 +239,7 @@
        <br>
        <i>40.1<i>
     </td>
-    <td onclick="quest(21)" class="metauDeTransition">
+    <td onclick='quest(21); this.onclick = null;' class="metauDeTransition">
       <strong>21</strong>
        <br>
        <acronym>Sc</acronym>
@@ -248,7 +248,7 @@
        <br>
        <i>45.0<i>
     </td>
-    <td onclick="quest(22)" class="metauDeTransition">
+    <td onclick='quest(22); this.onclick = null;' class="metauDeTransition">
       <strong>22</strong>
        <br>
        <acronym>Ti</acronym>
@@ -257,7 +257,7 @@
        <br>
        <i>47.9<i>
     </td>
-    <td onclick="quest(23)" class="metauDeTransition">
+    <td onclick='quest(23); this.onclick = null;' class="metauDeTransition">
       <strong>23</strong>
        <br>
        <acronym>V</acronym>
@@ -266,7 +266,7 @@
        <br>
        <i>50.9<i>
     </td>
-    <td onclick="quest(24)" class="metauDeTransition">
+    <td onclick='quest(24); this.onclick = null;' class="metauDeTransition">
       <strong>24</strong>
        <br>
        <acronym>Cr</acronym>
@@ -275,7 +275,7 @@
        <br>
        <i>52.0<i>
     </td>
-    <td onclick="quest(25)" class="metauDeTransition">
+    <td onclick='quest(25); this.onclick = null;' class="metauDeTransition">
       <strong>25</strong>
        <br>
        <acronym>Mn</acronym>
@@ -284,7 +284,7 @@
        <br>
        <i>54.9<i>
     </td>
-    <td onclick="quest(26)" class="metauDeTransition">
+    <td onclick='quest(26); this.onclick = null;' class="metauDeTransition">
       <strong>26</strong>
        <br>
        <acronym>Fe</acronym>
@@ -293,7 +293,7 @@
        <br>
        <i>55.8<i>
     </td>
-    <td onclick="quest(27)" class="metauDeTransition">
+    <td onclick='quest(27); this.onclick = null;' class="metauDeTransition">
       <strong>27</strong>
        <br>
        <acronym>Co</acronym>
@@ -302,7 +302,7 @@
        <br>
        <i>58.9<i>
     </td>
-    <td onclick="quest(28)" class="metauDeTransition">
+    <td onclick='quest(28); this.onclick = null;' class="metauDeTransition">
       <strong>28</strong>
        <br>
        <acronym>Ni</acronym>
@@ -311,7 +311,7 @@
        <br>
        <i>58.7<i>
     </td>
-    <td onclick="quest(29)" class="metauDeTransition">
+    <td onclick='quest(29); this.onclick = null;' class="metauDeTransition">
       <strong>29</strong>
        <br>
        <acronym>Cu</acronym>
@@ -320,7 +320,7 @@
        <br>
        <i>63.5<i>
     </td>
-    <td onclick="quest(30)" class="metauDeTransition">
+    <td onclick='quest(30); this.onclick = null;' class="metauDeTransition">
       <strong>30</strong>
        <br>
        <acronym>Zn</acronym>
@@ -329,7 +329,7 @@
        <br>
        <i>65.4<i>
     </td>
-    <td onclick="quest(31)" class="metalPauvre">
+    <td onclick='quest(31); this.onclick = null;' class="metalPauvre">
       <strong>31</strong>
        <br>
        <acronym>Ga</acronym>
@@ -338,7 +338,7 @@
        <br>
        <i>69.7<i>
     </td>
-    <td onclick="quest(32)" class="metaloides">
+    <td onclick='quest(32); this.onclick = null;' class="metaloides">
       <strong>32</strong>
        <br>
        <acronym>Ge</acronym>
@@ -347,7 +347,7 @@
        <br>
        <i>72.6<i>
     </td>
-    <td onclick="quest(33)" class="metaloides">
+    <td onclick='quest(33); this.onclick = null;' class="metaloides">
       <strong>33</strong>
        <br>
        <acronym>As</acronym>
@@ -356,7 +356,7 @@
        <br>
        <i>74.9<i>
     </td>
-    <td onclick="quest(34)" class = "nonMetals">
+    <td onclick='quest(34); this.onclick = null;' class = "nonMetals">
       <strong>34</strong>
        <br>
        <acronym>Se</acronym>
@@ -365,7 +365,7 @@
        <br>
        <i>79.0<i>
     </td>
-    <td onclick="quest(35)" class = "nonMetals">
+    <td onclick='quest(35); this.onclick = null;' class = "nonMetals">
       <strong>35</strong>
        <br>
        <acronym>Br</acronym>
@@ -374,7 +374,7 @@
        <br>
        <i>79.9<i>
     </td>
-    <td onclick="quest(36)" class="gasNoble">
+    <td onclick='quest(36); this.onclick = null;' class="gasNoble">
       <strong>36</strong>
        <br>
        <acronym>Kr</acronym>
@@ -387,7 +387,7 @@
    
     <tr>
     <th>5</th>
-    <td onclick="quest(37)" class = "alkMetals">
+    <td onclick='quest(37); this.onclick = null;' class = "alkMetals">
       <strong>37</strong>
        <br>
        <acronym>Rb</acronym>
@@ -396,7 +396,7 @@
        <br>
        <i>85.5<i>
     </td>
-    <td onclick="quest(38)" class="alkTerre">
+    <td onclick='quest(38); this.onclick = null;' class="alkTerre">
       <strong>38</strong>
        <br>
        <acronym>Sr</acronym>
@@ -405,7 +405,7 @@
        <br>
        <i>87.6<i>
     </td>
-    <td onclick="quest(39)" class="metauDeTransition">
+    <td onclick='quest(39); this.onclick = null;' class="metauDeTransition">
       <strong>39</strong>
        <br>
        <acronym>Y</acronym>
@@ -414,7 +414,7 @@
        <br>
        <i>88.9<i>
     </td>
-    <td onclick="quest(40)" class="metauDeTransition">
+    <td onclick='quest(40); this.onclick = null;' class="metauDeTransition">
       <strong>40</strong>
        <br>
        <acronym>Zr</acronym>
@@ -423,7 +423,7 @@
        <br>
        <i>91.2<i>
     </td>
-    <td onclick="quest(41)" class="metauDeTransition">
+    <td onclick='quest(41); this.onclick = null;' class="metauDeTransition">
       <strong>41</strong>
        <br>
        <acronym>Nb</acronym>
@@ -432,7 +432,7 @@
        <br>
        <i>92.9<i>
     </td>
-    <td onclick="quest(42)" class="metauDeTransition">
+    <td onclick='quest(42); this.onclick = null;' class="metauDeTransition">
       <strong>42</strong>
        <br>
        <acronym>Mo</acronym>
@@ -441,7 +441,7 @@
        <br>
        <i>95.9<i>
      </td>
-    <td onclick="quest(43)" class="metauDeTransition">
+    <td onclick='quest(43); this.onclick = null;' class="metauDeTransition">
       <strong>43</strong>
        <br>
        <acronym>Tc</acronym>
@@ -450,7 +450,7 @@
        <br>
        <i>98.0<i>
     </td>
-    <td onclick="quest(44)" class="metauDeTransition">
+    <td onclick='quest(44); this.onclick = null;' class="metauDeTransition">
       <strong>44</strong>
        <br>
        <acronym>Ru</acronym>
@@ -459,7 +459,7 @@
        <br>
        <i>101.1<i>
     </td>
-    <td onclick="quest(45)" class="metauDeTransition">
+    <td onclick='quest(45); this.onclick = null;' class="metauDeTransition">
       <strong>45</strong>
        <br>
        <acronym>Rh</acronym>
@@ -468,7 +468,7 @@
        <br>
        <i>102.9<i>
     </td>
-    <td onclick="quest(46)" class="metauDeTransition">
+    <td onclick='quest(46); this.onclick = null; 'class="metauDeTransition">
       <strong>46</strong>
        <br>
        <acronym>Pd</acronym>
@@ -477,7 +477,7 @@
        <br>
        <i>106.4<i>
     </td>
-    <td onclick="quest(47)" class="metauDeTransition">
+    <td onclick='quest(47); this.onclick = null;' class="metauDeTransition">
       <strong>47</strong>
        <br>
        <acronym>Ag</acronym>
@@ -486,7 +486,7 @@
        <br>
        <i>107.9<i>
        </td>
-    <td onclick="quest(48)" class="metauDeTransition">
+    <td onclick='quest(48); this.onclick = null;' class="metauDeTransition">
       <strong>48</strong>
        <br>
        <acronym>Cd</acronym>
@@ -495,7 +495,7 @@
        <br>
        <i>112.4<i>
     </td>
-    <td onclick="quest(49)" class="metalPauvre">
+    <td onclick='quest(49); this.onclick = null;' class="metalPauvre">
       <strong>49</strong>
        <br>
        <acronym>In</acronym>
@@ -504,7 +504,7 @@
        <br>
        <i>114.8<i>
        </td>
-    <td onclick="quest(50)" class="metalPauvre">
+    <td onclick='quest(50); this.onclick = null;' class="metalPauvre">
       <strong>50</strong>
        <br>
        <acronym>Sn</acronym>
@@ -513,7 +513,7 @@
        <br>
        <i>118.7<i>
     </td>
-    <td onclick="quest(51)" class="metaloides">
+    <td onclick='quest(51); this.onclick = null;' class="metaloides">
       <strong>51</strong>
        <br>
        <acronym>Sb</acronym>
@@ -522,7 +522,7 @@
        <br>
        <i>121.8<i>
     </td>
-    <td onclick="quest(52)" class="metaloides">
+    <td onclick='quest(52); this.onclick = null;' class="metaloides">
      <strong>52</strong>
        <br>
        <acronym>Te</acronym>
@@ -531,7 +531,7 @@
        <br>
        <i>127.6<i>
     </td>
-    <td onclick="quest(53)" class = "nonMetals">
+    <td onclick='quest(53); this.onclick = null;' class = "nonMetals">
       <strong>53</strong>
        <br>
        <acronym>I</acronym>
@@ -540,7 +540,7 @@
        <br>
        <i>126.9<i>
     </td>
-    <td onclick="quest(54)" class="gasNoble">
+    <td onclick='quest(54); this.onclick = null;' class="gasNoble">
       <strong>54</strong>
        <br>
        <acronym>Xe</acronym>
@@ -553,7 +553,7 @@
     
      <tr>
     <th>6</th>
-    <td onclick="quest(55)" class = "alkMetals">
+    <td onclick='quest(55); this.onclick = null;' class = "alkMetals">
       <strong>55</strong>
        <br>
        <acronym>Cs</acronym>
@@ -562,7 +562,7 @@
        <br>
        <i>132.9<i>
        </td>
-    <td onclick="quest(56)" class="alkTerre">
+    <td onclick='quest(56); this.onclick = null;' class="alkTerre">
       <strong>56</strong>
        <br>
        <acronym>Ba</acronym>
@@ -571,7 +571,7 @@
        <br>
        <i>137..3<i>
     </td>
-    <td onclick="quest(57)" class="metauDeTransition">
+    <td onclick='quest(57); this.onclick = null;' class="metauDeTransition">
       <strong>57</strong>
        <br>
        <acronym>La</acronym>
@@ -580,7 +580,7 @@
        <br>
        <i>138.9<i>
     </td>
-    <td onclick="quest(58)" class="metauDeTransition">
+    <td onclick='quest(58); this.onclick = null;' class="metauDeTransition">
       <strong>72</strong>
        <br>
        <acronym>Hf</acronym>
@@ -589,7 +589,7 @@
        <br>
        <i>178.5<i>
     </td>
-    <td onclick="quest(59)" class="metauDeTransition">
+    <td onclick='quest(59); this.onclick = null;' class="metauDeTransition">
       <strong>73</strong>
        <br>
        <acronym>Ta</acronym>
@@ -599,7 +599,7 @@
        <i>180.9<i>
      
     </td>
-    <td onclick="quest(60)" class="metauDeTransition">
+    <td onclick='quest(60); this.onclick = null;' class="metauDeTransition">
       <strong>74</strong>
        <br>
        <acronym>W</acronym>
@@ -609,7 +609,7 @@
        <i>183.8<i>
      
     </td>
-    <td onclick="quest(61)" class="metauDeTransition">
+    <td onclick='quest(61); this.onclick = null;' class="metauDeTransition">
       <strong>75</strong>
        <br>
        <acronym>Re</acronym>
@@ -619,7 +619,7 @@
        <i>186.2<i>
      
     </td>
-    <td onclick="quest(62)" class="metauDeTransition">
+    <td onclick='quest(62); this.onclick = null;' class="metauDeTransition">
       <strong>76</strong>
        <br>
        <acronym>Os</acronym>
@@ -629,8 +629,8 @@
        <i>190.2<i>
      
     </td>
-    <td onclick="quest(63)" class="metauDeTransition">
-      <strong>77</strong>
+    <td onclick='quest(63); this.onclick = null;' class="metauDeTransition">
+       <strong>77</strong>
        <br>
        <acronym>Ir</acronym>
        <br>
@@ -639,7 +639,7 @@
        <i>192.2<i>
      
     </td>
-    <td onclick="quest(64)" class="metauDeTransition">
+    <td onclick='quest(64); this.onclick = null;'class="metauDeTransition">
       <strong>78</strong>
        <br>
        <acronym>Pt</acronym>
@@ -649,7 +649,7 @@
        <i>195.1<i>
      
     </td>
-    <td onclick="quest(65)" class="metauDeTransition">
+    <td onclick='quest(65); this.onclick = null;' class="metauDeTransition">
       <strong>79</strong>
        <br>
        <acronym>Au</acronym>
@@ -659,7 +659,7 @@
        <i>197.0<i>
      
     </td>
-    <td onclick="quest(66)" class="metauDeTransition">
+    <td onclick='quest(66); this.onclick = null;' class="metauDeTransition">
       <strong>80</strong>
        <br>
        <acronym>Hg</acronym>
@@ -669,7 +669,7 @@
        <i>200.6<i>
      
     </td>
-    <td onclick="quest(67)" class="metalPauvre">
+    <td onclick='quest(67); this.onclick = null;' class="metalPauvre">
       <strong>81</strong>
        <br>
        <acronym>Tl</acronym>
@@ -679,7 +679,7 @@
        <i>204.4<i>
      
     </td>
-    <td onclick="quest(68)" class="metalPauvre">
+    <td onclick='quest(68); this.onclick = null;' class="metalPauvre">
       <strong>82</strong>
        <br>
        <acronym>Pb</acronym>
@@ -689,7 +689,7 @@
        <i>207.2<i>
      
     </td>
-    <td onclick="quest(69)" class="metalPauvre">
+    <td onclick='quest(69); this.onclick = null;' class="metalPauvre"><!--Nice-->
       <strong>83</strong>
        <br>
        <acronym>Bi</acronym>
@@ -699,7 +699,7 @@
        <i>209.0<i>
      
     </td>
-    <td onclick="quest(70)" class="metalPauvre">
+    <td onclick='quest(70); this.onclick = null;' class="metalPauvre">
       <strong>84</strong>
        <br>
        <acronym>Po</acronym>
@@ -709,7 +709,7 @@
        <i>209.0<i>
      
     </td>
-    <td onclick="quest(71)" class="metaloides">
+    <td onclick='quest(71); this.onclick = null;' class="metaloides">
       <strong>85</strong>
        <br>
        <acronym>At</acronym>
@@ -719,7 +719,7 @@
        <i>210.0<i>
      
     </td>
-    <td onclick="quest(72)" class="gasNoble">
+    <td onclick='quest(72); this.onclick = null;' class="gasNoble">
       <strong>86</strong>
        <br>
        <acronym>Rn</acronym>
@@ -732,7 +732,7 @@
    
     <tr>
     <th>7</th>
-    <td onclick="quest(73)" class = "alkMetals">
+    <td onclick='quest(73); this.onclick = null;' class = "alkMetals">
       <strong>87</strong>
        <br>
        <acronym>Fr</acronym>
@@ -741,7 +741,7 @@
        <br>
        <i>223.0<i>
     </td>
-    <td onclick="quest(74)" class="alkTerre">
+    <td onclick='quest(74); this.onclick = null;' class="alkTerre">
       <strong>88</strong>
        <br>
        <acronym>Ra</acronym>
@@ -750,7 +750,7 @@
        <br>
        <i>226.0<i>
     </td>
-    <td onclick="quest(75)" class="metauDeTransition">
+    <td onclick='quest(75); this.onclick = null;' class="metauDeTransition">
       <strong>89</strong>
        <br>
        <acronym>Ac</acronym>
@@ -759,7 +759,7 @@
        <br>
        <i>227.0<i>
     </td>
-    <td onclick="quest(76)" class="metauDeTransition">
+    <td onclick='quest(76); this.onclick = null;' class="metauDeTransition">
       <strong>104</strong>
        <br>
        <acronym>Rf</acronym>
@@ -768,7 +768,7 @@
        <br>
        <i>261.0<i>
     </td>
-    <td onclick="quest(77)" class="metauDeTransition">
+    <td onclick='quest(77); this.onclick = null;' class="metauDeTransition">
       <strong>105</strong>
        <br>
        <acronym>Db</acronym>
@@ -777,7 +777,7 @@
        <br>
        <i>262.0<i>
     </td>
-    <td onclick="quest(78)" class="metauDeTransition">
+    <td onclick='quest(78); this.onclick = null;' class="metauDeTransition">
       <strong>106</strong>
        <br>
        <acronym>Sg</acronym>
@@ -786,7 +786,7 @@
        <br>
        <i>263.0<i>
     </td>
-    <td onclick="quest(79)" class="metauDeTransition">
+    <td onclick='quest(79); this.onclick = null;' class="metauDeTransition">
        <strong>107</strong>
        <br>
        <acronym>Bh</acronym>
@@ -795,7 +795,7 @@
        <br>
        <i>262.0<i>
     </td>
-    <td onclick="quest(80)" class="metauDeTransition">
+    <td onclick='quest(80); this.onclick = null;' class="metauDeTransition">
       <strong>108</strong>
        <br>
        <acronym>Hs</acronym>
@@ -804,7 +804,7 @@
        <br>
        <i>265.0<i>
     </td>
-    <td onclick="quest(80)" class="artificiel">
+    <td onclick='quest(81); this.onclick = null;' class="artificiel">
       <strong>109</strong>
        <br>
        <acronym>Mt</acronym>
@@ -813,7 +813,7 @@
        <br>
        <i>266.0<i>
     </td>
-    <td onclick="quest(81)" class="artificiel">
+    <td onclick='quest(82); this.onclick = null;' class="artificiel">
       <strong>110</strong>
        <br>
        <acronym>Ds</acronym>
@@ -822,7 +822,7 @@
        <br>
        <i>281.0<i>
     </td>
-    <td onclick="quest(82)" class="artificiel">
+    <td onclick='quest(83); this.onclick = null;' class="artificiel">
       <strong>111</strong>
        <br>
        <acronym>Rg</acronym>
@@ -831,7 +831,7 @@
        <br>
        <i>272.0<i>
     </td>
-    <td onclick="quest(83)" class="artificiel">
+    <td onclick='quest(84); this.onclick = null;' class="artificiel">
       <strong>112</strong>
        <br>
        <acronym>Uub</acronym>
@@ -840,7 +840,7 @@
        <br>
        <i>285.0<i>
     </td>
-    <td onclick="quest(84)" class="artificiel">
+    <td onclick='quest(85); this.onclick = null;' class="artificiel">
       <strong>113</strong>
        <br>
        <acronym>Uut</acronym>
@@ -849,7 +849,7 @@
        <br>
        <i>284.0<i>
     </td>
-    <td onclick="quest(85)" class="artificiel">
+    <td onclick='quest(86); this.onclick = null;' class="artificiel">
       <strong>114</strong>
        <br>
        <acronym>Uuq</acronym>
@@ -858,7 +858,7 @@
        <br>
        <i>289.0<i>
     </td>
-    <td onclick="quest(86)" class="artificiel">
+    <td onclick='quest(87); this.onclick = null;' class="artificiel">
       <strong>115</strong>
        <br>
        <acronym>Uup</acronym>
@@ -867,7 +867,7 @@
        <br>
        <i>288.0<i>
     </td>
-    <td onclick="quest(87)" class="artificiel">
+    <td onclick='quest(88); this.onclick = null;' class="artificiel">
       <strong>116</strong>
        <br>
        <acronym>Uuh</acronym>
@@ -876,9 +876,8 @@
        <br>
        <i><i>
     </td>
-   
     <th></th>
-    <td onclick="quest(88)" class="artificiel">
+    <td onclick='quest(89); this.onclick = null;' class="artificiel">
       <strong>118</strong>
        <br>
        <acronym>Uuo</acronym>
@@ -891,9 +890,8 @@
  </tbody>
 </thead>
 </table>
- 
- 
-<script src="script.js"></script>
-<div class= "questionDiv" id = "divAffiche"></div>
+
+<script src="script.js"></script><!--la reference au dosier javascript-->
+<div class= "questionDiv" id = "divAffiche"></div><!--le div qui affiche la question-->
     </body>
 </html>
