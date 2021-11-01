@@ -7,7 +7,7 @@ td:hover{
  border-color: rgb(0, 4, 255);
  border-width: 1px;
  position: relative;
- background-color: ;
+ background-color: rgba(0,4,255, 0.5) ;
  
 }
 table{

@@ -12,13 +12,13 @@ var element = [
  74,75,76,77,78,79,80,81,82,83,84,85,86,87],
  
  
- ["0","G","G",
- "S","S","S","S","G","G","G","G",
- "S","S","S","S","S","S","G","G",
- "S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","L","G",
- "S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","G",
- "S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","S","G",
- "I","S","S","I","I","I","I","I","I","I","I","I","I","I","I","I","","I"],
+ ["0","Gaz","Gaz",
+ "Solid","Solid","Solid","Solid","Gaz","Gaz","Gaz","Gaz",
+ "Solid","Solid","Solid","Solid","Solid","Solid","Gaz","Gaz",
+ "Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Liquid","Gaz",
+ "Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Gaz",
+ "Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Solid","Liquid","Solid","Solid","Solid","Solid","Solid","Gaz",
+ "Inconnue","Solid","Solid","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","","Inconnue"],
  
  
  ["0","1+","0",
@@ -37,13 +37,13 @@ var element = [
 "6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6",
 "7","7","7","7","7","7","7","7","7","7","7","7","7","7","7","7","7","7"],
  
- ["0","nm","gn",
- "al","at","mi","nm","nm","nm","nm","gn",
- "al","at","mp","mi","nm","nm","nm","gn",
- "al","at","mt","mt","mt","mt","mt","mt","mt","mt","mt","mt","mp","mi","mi","nm","nm","gn",
- "al","at","mt","mt","mt","mt","mt","mt","mt","mt","mt","mt","mp","mp","mi","mi","nm","gn",
- "al","at","mt","mt","mt","mt","mt","mt","mt","mt","mt","mt","mp","mp","mp","mp","mi","gn",
- "al","at","mt","mt","mt","mt","mt","mt","in","in","in","in","in","in","in","in","in","in"],
+ ["0","Non-metal","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metaloides","Non-metal","Non-metal","Non-metal","Non-metal","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metal pauvre","Metaloides","Non-metal","Non-metal","Non-metal","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metal pauvre","Metaloides","Metaloides","Non-metal","Non-metal","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metal pauvre","Metal pauvre","Metaloides","Metaloides","Non-metal","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metal pauvre","Metal pauvre","Metal pauvre","Metal pauvre","Metaloides","Gaz noble",
+ "Alcalin","Alcalin terrereux","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Metaux de transition","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue","Inconnue"],
  
 ];
  /*fonction pour les question*/
@@ -56,13 +56,13 @@ function quest(numElement){
   if (numQuest == 1){
     document.getElementById('divAffiche').innerHTML = 
     "<form>"+" <label for = 'otpion'> Quelle est letat naturel de l'element? </label>"+ "<br>"+
-    " <input type = 'radio' name = 'questEtat' id = 'etats' value = 'G'/>Gaz"
+    " <input type = 'radio' name = 'questEtat' id = 'etats' value = 'Gaz'/>Gaz"
     +"<br>"+
-    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'L'/>Liquid"
+    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'Liquid'/>Liquid"
     +"<br>" +
-    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'S'/>Solid"
+    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'Solid'/>Solid"
     + "<br>"+
-    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'I'/>Inconnue"
+    "<input type = 'radio' name = 'questEtat' id = 'etats' value = 'Inconnue'/>Inconnue"
     +"<br>"+
     /*Bouton pour verifier et soummettre la reponse*/
     "<input type='button' value = 'Soummettre reponse' onclick='verifieRep("+ numElement+","+numQuest +")'" +"</form>";
@@ -131,21 +131,21 @@ function quest(numElement){
   if (numQuest == 4){
     document.getElementById('divAffiche').innerHTML = 
     "<form>"+" <label for = 'otpion'> Combien de couche de valence? </label>"+ "<br>"+
-    " <input type = 'radio' name = 'questFam' id = 'Couche' value = 'al'/>Alcalin"
+    " <input type = 'radio' name = 'questFam' id = 'Couche' value = 'Alcalin'/>Alcalin"
     +"<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Couche' value = 'at'/>Alcalin terrereux"
+    "<input type = 'radio' name = 'questFam' id = 'Couche' value = 'Alcalin terrereux'/>Alcalin terrereux"
     +"<br>" +
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'mt'/>Metaux de transition"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Metaux de transition'/>Metaux de transition"
     + "<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'mp'/>Metal pauvre"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Metal pauvre'/>Metal pauvre"
     +"<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'mi'/>Metaloides"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Metaloides'/>Metaloides"
     +"<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'nm'/>Non-metal"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Non-metal'/>Non-metal"
     +"<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'gn'/>Gaz noble"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Gaz noble'/>Gaz noble"
     +"<br>"+
-    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'in'/>Inconnue"
+    "<input type = 'radio' name = 'questFam' id = 'Fam' value = 'Inconnue'/>Inconnue"
     +"<br>"+
     /*Bouton pour verifier et soummettre la reponse*/
     "<input type='button' value = 'Soummettre reponse' onclick='verifieRep("+ numElement+","+numQuest +")'" +"</form>";
