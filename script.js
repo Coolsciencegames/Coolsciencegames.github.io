@@ -130,7 +130,7 @@ function quest(numElement){
   /*La quatrieme question*/
   if (numQuest == 4){
     document.getElementById('divAffiche').innerHTML = 
-    "<form>"+" <label for = 'otpion'> Combien de couche de valence? </label>"+ "<br>"+
+    "<form>"+" <label for = 'otpion'> Quel est la famille de cette element? </label>"+ "<br>"+
     " <input type = 'radio' name = 'questFam' id = 'Couche' value = 'Alcalin'/>Alcalin"
     +"<br>"+
     "<input type = 'radio' name = 'questFam' id = 'Couche' value = 'Alcalin terrereux'/>Alcalin terrereux"
@@ -231,15 +231,15 @@ function verifieRep(numElement,numQuest){
 
  
  
-/*reponce pour la premiere question */
+/*Le message pour la premiere question */
     if (numQuest == 1){
-      /* si bonne reponce 452*/
+      /* si bonne reponse*/
       if (etatElementSel===etat){
           document.getElementById('divAffiche').innerHTML = "Bonne reponse!!!";
         score= score + 20;
         document.getElementById('sc').innerHTML = score;
       }
-      /* si mauvaise reponce */
+      /* si mauvaise reponse */
       if(etatElementSel!==etat){
             document.getElementById('divAffiche').innerHTML = "Mauvaise reponse, la reponse est: " + etatElementSel;
         
@@ -248,19 +248,19 @@ function verifieRep(numElement,numQuest){
       }
     }
 
-    /* */
+    /*Le message pour la deuxieme question */
     if (numQuest == 2){
       
       
-      /* */
+      /* si bonne reponse*/
       if (ionElementSel==ion){
           document.getElementById('divAffiche').innerHTML = "Bonne reponse!!!";
-        score= score + 20;
+        score= score + 30;
         document.getElementById('sc').innerHTML = score;
       }
 
       
-      /* */
+      /* si mauvaise reponse*/
       if (ionElementSel!=ion){
             document.getElementById('divAffiche').innerHTML = "Mauvaise reponse, la reponse est: " + ionElementSel;
         
@@ -269,20 +269,20 @@ function verifieRep(numElement,numQuest){
       }
       }
 
-    /* */
+    /*Le message pour la troisieme question */
     if (numQuest == 3){
       
       
       
-      /* */
+      /* si bonne reponse*/
       if (valElementSel===valence){
           document.getElementById('divAffiche').innerHTML = "Bonne reponse!!!";
-        score= score + 20;
+        score= score + 10;
         document.getElementById('sc').innerHTML = score;
       }
 
       
-      /* */
+      /* si mauvaise reponse*/
       if (valElementSel!==valence){
             document.getElementById('divAffiche').innerHTML = "Mauvaise reponse, la reponse est: " + valElementSel;
         
@@ -290,12 +290,12 @@ function verifieRep(numElement,numQuest){
         
       } 
     }
-
+    /*Le message pour la quatrieme question */
     if (numQuest == 4){
       
       
       
-      /* */
+      /* si bonne reponse*/
       if (famElementSel===fammille){
           document.getElementById('divAffiche').innerHTML = "Bonne reponse!!!";
         score= score + 20;
@@ -303,7 +303,7 @@ function verifieRep(numElement,numQuest){
       }
 
       
-      /* */
+      /* si mauvaise reponse*/
       if (famElementSel!==fammille){
             document.getElementById('divAffiche').innerHTML = "Mauvaise reponse, la reponse est: " + famElementSel;
         
