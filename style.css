@@ -1,8 +1,8 @@
 table, td{
  border: 1px solid black;
  overflow: hidden;
-
 }
+
 td:hover{
  border-color: rgb(0, 4, 255);
  border-width: 1px;
@@ -27,6 +27,10 @@ strong {
 .questionDiv{
  text-align: center;
  border: 1px solid black;
+}
+th{
+  width: 5.5%;
+  height: 14.3%;
 }
  
  
